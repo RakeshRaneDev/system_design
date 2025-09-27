@@ -9,7 +9,7 @@
 *.idea
 *.setting
 *.classpath
-*.project
+/.classpath
 .classpath
 .project
 # Log file
