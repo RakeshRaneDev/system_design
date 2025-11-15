@@ -21,40 +21,40 @@ The Open/Closed principle states that classes can be extended but not modified. 
 
 An abstract class cannot instantiate an object and can only be used as a base class. The abstract class for Vehicle is the best approach. It allows us to create derived child classes for the Vehicle class. 
 It can also be extended easily in case the vehicle type changes.
+![class_diagram.png](..%2Fimages%2Fclass_diagram.png)
 
-![class_diagram_vehicle.png](images%2Fclass_diagram_vehicle.png)
 img - The class diagram of Vehicle and its derived classes
 
 Click to see the relevant requirements: R1 , R4 , R6 ,R10
 
 ### Parking spot
 Similar to the Vehicle class, the ParkingSpot should also be an abstract class. There are four types of parking spots: handicapped, compact, large, and motorcycle. These classes can be derived from the parking spot abstract class.
-![parking spot'.png](images%2Fparking%20spot%27.png)
+![parking spot'.png](..%2Fimages%2Fparking%20spot%27.png)
 
 ### Account
 Similar to the Vehicle and ParkingSpot classes, Account should also be an abstract class. The Admin class is derived from this abstract class.
-![account.png](images%2Faccount.png)
+![account.png](..%2Fimages%2Faccount.png)
 
 ### Display board
 This class represents the free parking spot types and the number of empty slots.
-![display board.png](images%2Fdisplay%20board.png)
+![display board.png](..%2Fimages%2Fdisplay%20board.png)
 
 ### Entrance and exit
 The Entrance class is responsible for generating the parking ticket whenever a vehicle arrives. It contains the ID attribute, since there are multiple entrances to the parking lot. It also has the getTicket() method.
 The Exit class is responsible for validating the parking ticket’s payment status before allowing the vehicle to exit the parking lot. It contains the ID attribute, since there are multiple exits to the parking lot. It also has the validateTicket() method.
-![Entrance and Exit classes.png](images%2FEntrance%20and%20Exit%20classes.png)
+![Entrance and Exit classes.png](..%2Fimages%2FEntrance%20and%20Exit%20classes.png)
 
 ### Parking ticket
 The ParkingTicket class is one of the central classes of the system. It keeps track of the entrance and exit times of the vehicles, the amount, and the payment status.
-![Parking Ticket class.png](images%2FParking%20Ticket%20class.png)
+![Parking Ticket class.png](..%2Fimages%2FParking%20Ticket%20class.png)
 
 ### Payment
 The Payment class will be an abstract class and will have two child classes, card and cash, since these are two payment methods of the parking lot system.
-![Payment class.png](images%2FPayment%20class.png)
+![Payment class.png](..%2Fimages%2FPayment%20class.png)
 
 ### Parking rate#
 The ParkingRate class is responsible for calculating the final payment based on the time spent in the parking lot.
-![ParkingRate class.png](images%2FParkingRate%20class.png)
+![ParkingRate class.png](..%2Fimages%2FParkingRate%20class.png)
 
 ### Parking lot
 Now, we will discuss the design of the whole ParkingLot system class. This parking lot system is composed of smaller objects we have already designed, like entrance/exit, parking spots, parking rates, etc.
@@ -64,16 +64,16 @@ The following provides an overview of the enumerations and custom data types use
 * **PaymentStatus:** We need to create an enumeration to keep track of the payment status of the parking ticket, whether it is paid, unpaid, canceled, refunded, and so on.
 * **AccountStatus:**  We need to create an enumeration to keep track of the status of the account, whether it is active, canceled, closed, and so on.
 * **TicketStatus:**  We need to create an enumeration to keep track of the current status of a parking ticket, whether it is issued, in use, paid, validated, canceled, refunded, and so on.
-![Enums in the parking lot system.png](images%2FEnums%20in%20the%20parking%20lot%20system.png)
+![parking_lot_system.png](..%2Fimages%2Fparking_lot_system.png)
 
 
 ### Address
 We also need to create a custom data type, Address, that will store the location of the parking lot.
-![Address custom data type.png](images%2FAddress%20custom%20data%20type.png)
+![Address custom data type.png](..%2Fimages%2FAddress%20custom%20data%20type.png)
 
 ### Person
 The Person class is used to store information related to a person like a name, street address, country, etc.
-![Person class custom data type.png](images%2FPerson%20class%20custom%20data%20type.png)
+![Person class custom data type.png](..%2Fimages%2FPerson%20class%20custom%20data%20type.png)
 
 ## Relationship between the classes
 Now, we’ll discuss the relationships between the classes we have defined above in our parking lot system.
