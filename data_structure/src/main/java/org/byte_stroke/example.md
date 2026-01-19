@@ -12,3 +12,16 @@ for(int num: nums){
   }
 	return result;
 ```
+#### 2. Check string is paldrom or not
+```
+public boolean isPali(String s, int start, int end){
+        while(start<end){
+            if(s.charAt(start)!=s.charAt(end)){
+                return false;
+            }
+            start++;
+            end--;
+        }
+        return true;
+    }
+```
