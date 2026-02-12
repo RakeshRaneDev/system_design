@@ -16,17 +16,17 @@ public class InventoryManagementSystemApplication {
             // Demo 1: Product Management
             demonstrateProductManagement(inventory);
             
-            // Demo 2: Warehouse Management
-            demonstrateWarehouseManagement(inventory);
-            
-            // Demo 3: Inventory Management
-            demonstrateInventoryManagement(inventory);
-            
-            // Demo 4: Stock Operations
-            demonstrateStockOperations(inventory);
-            
-            // Demo 5: Alerts and Reporting
-            demonstrateAlertsAndReporting(inventory);
+//            // Demo 2: Warehouse Management
+//            demonstrateWarehouseManagement(inventory);
+//
+//            // Demo 3: Inventory Management
+//            demonstrateInventoryManagement(inventory);
+//
+//            // Demo 4: Stock Operations
+//            demonstrateStockOperations(inventory);
+//
+//            // Demo 5: Alerts and Reporting
+//            demonstrateAlertsAndReporting(inventory);
             
         } catch (Exception e) {
             System.err.println("Error during demo: " + e.getMessage());
