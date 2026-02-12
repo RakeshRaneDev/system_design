@@ -15,7 +15,7 @@ public class InventoryManagementSystemApplication {
         try {
             // Demo 1: Product Management
             demonstrateProductManagement(inventory);
-            
+
             // Demo 2: Warehouse Management
             demonstrateWarehouseManagement(inventory);
             
